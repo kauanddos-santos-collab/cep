@@ -1,10 +1,11 @@
+
 /* ===== RESET E BASE ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #6c5ce7, #000000);
@@ -14,7 +15,22 @@ body {
   justify-content: center;
   padding: 20px;
 }
-
+ 
+/* ===== TÍTULO (GERAL) ===== */
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+ 
+/* Texto dentro do <mark> continua escuro, pois o fundo é amarelo */
+mark {
+  background-color: #ffd54f;
+  color: #2d3436;
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+ 
 /* ===== FORMULÁRIO (CARD) ===== */
 #formConsulta {
   background: #3f053c;
@@ -27,15 +43,15 @@ body {
   flex-direction: column;
   gap: 6px;
 }
-
+ 
 /* ===== LABELS ===== */
 #formConsulta label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #2d3436;
+  color: #ffffff;
   margin-top: 12px;
 }
-
+ 
 /* ===== INPUTS ===== */
 #formConsulta input {
   padding: 12px 14px;
@@ -45,17 +61,17 @@ body {
   color: #2d3436;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-
+ 
 #formConsulta input:focus {
   outline: none;
   border-color: #6c5ce7;
   box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.15);
 }
-
+ 
 #formConsulta input::placeholder {
   color: #b2bec3;
 }
-
+ 
 /* ===== BOTÃO ===== */
 #formConsulta button {
   margin-top: 20px;
@@ -69,20 +85,79 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
-
+ 
 #formConsulta button:hover {
   background-color: #5341d6;
 }
-
+ 
 #formConsulta button:active {
   transform: scale(0.98);
 }
-
+ 
 /* ===== MENSAGEM DE STATUS ===== */
 #mensagem {
   margin-top: 16px;
   text-align: center;
   font-size: 0.9rem;
-  color: #504040;
+  color: #ffffff;
   min-height: 20px;
 }
+ 
+/* ===== CARD DA PÁGINA DE RESULTADO ===== */
+#cardResultado {
+  background: #3f053c;
+  width: 100%;
+  max-width: 380px;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+ 
+#resultado {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+ 
+#resultado p {
+  margin-bottom: 8px;
+}
+ 
+#resultado strong {
+  color: #dfe6e9;
+}
+ 
+/* ===== LINK GOOGLE MAPS ===== */
+#linkMaps {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  padding: 12px;
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+ 
+#linkMaps:hover {
+  background-color: #5341d6;
+}
+ 
+/* ===== LINK "FAZER NOVA CONSULTA" ===== */
+#voltar {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+#voltar a {
+  color: #dfe6e9;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+ 
+#voltar a:hover {
+  color: #ffffff;
+}
+ 
